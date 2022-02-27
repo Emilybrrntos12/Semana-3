@@ -5,18 +5,18 @@
     CAN = C200= C100 = C50 = C20 = C10 = C5 = C1 = cn50 =  cn25 = cn10 = cn5 = cn1 = 0;
     string linea;
 
-    Console.Write("Ingrese una cantidad en Dolares: ");
+    Console.Write("\n\tIngrese una cantidad en Dolares: ");
     linea = Console.ReadLine();
 
     moneda = (float)Convert.ToDecimal(linea);
     moneda *= cambiomoneda;
 
-    Console.WriteLine($"Su cambio en Quetzales es de: {moneda}");
+    Console.WriteLine($"\tSu cambio en Quetzales es de: {moneda}");
 
     CAN = Convert.ToInt32(Math.Truncate(moneda));
     moneda = (moneda - CAN) * 100;
 
-    Console.WriteLine($"Sus monedas son: {moneda}");
+    Console.WriteLine($"\tSus monedas son: {moneda}");
 
     if (CAN >= 200)
     {
@@ -83,20 +83,20 @@
     }
 
 
-    Console.WriteLine("\n--ESTOS SON BILLETES--");
-    Console.WriteLine($"Billestes de 200: {C200}");
-    Console.WriteLine($"Billestes de 100: {C100}");
-    Console.WriteLine($"Billestes de 50: {C50}");
-    Console.WriteLine($"Billestes de 20: {C20}");
-    Console.WriteLine($"Billestes de 10: {C10}");
-    Console.WriteLine($"Billestes de 5: {C5}");
+    Console.WriteLine("\n\t\t--ESTOS SON BILLETES--");
+    Console.WriteLine($"\tBillestes de 200: {C200}");
+    Console.WriteLine($"\tBillestes de 100: {C100}");
+    Console.WriteLine($"\tBillestes de 50: {C50}");
+    Console.WriteLine($"\tBillestes de 20: {C20}");
+    Console.WriteLine($"\tBillestes de 10: {C10}");
+    Console.WriteLine($"\tBillestes de 5: {C5}");
     Console.WriteLine($"Billestes de 1: {C1}");
-    Console.WriteLine("\n--ESTOS SON LOS CENTAVOS--");
-    Console.WriteLine($"Centavos de 0.50: {cn50}");
-    Console.WriteLine($"Centavos de 0.25: {cn25}");
-    Console.WriteLine($"Centavos de 0.10: {cn10}");
-    Console.WriteLine($"Centavos de 0.05: {cn5}");
-    Console.WriteLine($"Centavos de 0.01: {cn1}");
+    Console.WriteLine("\n\t\t--ESTOS SON LOS CENTAVOS--");
+    Console.WriteLine($"\tCentavos de 0.50: {cn50}");
+    Console.WriteLine($"\tCentavos de 0.25: {cn25}");
+    Console.WriteLine($"\tCentavos de 0.10: {cn10}");
+    Console.WriteLine($"\tCentavos de 0.05: {cn5}");
+    Console.WriteLine($"\tCentavos de 0.01: {cn1}");
 
     Console.WriteLine();
 }
